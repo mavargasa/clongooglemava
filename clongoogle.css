@@ -1,149 +1,201 @@
+/* Dar fuente al Body tipo de letra roboto */
 *body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  display:
 }
 
+/* Dar fuente al menu superior */
 #search{
-    padding: 10px;
-     margin: 10px; 
-     order: 2px solid black;
-      float: right; 
-      width: 280px;
-      font-family: arial, sans-serif;
-  font-size: 13px;
-  color: #222;
-  display: block;
-  
+padding: 10px;
+ margin: 10px;
+ border: 500px;
+ order: 2px solid black;
+  float: right; 
+  width: 380px;
+ font-size: 13px;
+color: #222;
+display: block;
+text-decoration: none;
+
+}
+#search a {
+text-decoration: none;
+} 
+
+#gmail{
+padding: 5px;
+font-size: 20px; /* 2vw */
+color:rgba(0, 0, 0, 0.834);
+text-decoration: none;
 }
 
-
-
-
-.header-left {
-  padding-left: 15px;
-  float: left;
+#imagenes{
+padding: 5px;
+font-size: 20px;
+color:rgba(0, 0, 0, 0.834);
+text-decoration: none;
 }
 
-.header-right {
-  padding-right: 15px;
-  float: right;
+/* Disminuir tamaño del cuadrado */
+#Cuadrado {
+padding-left: 10px;
+padding-right: 10px;
+ width: 20px;
+height: 20px;
 }
 
-.sign-in-button {
-  font-weight: bold;
-  border: 1px solid #4285f4;
-  border-radius: 2px;
-  background-color: #4683ea;
-  color: white;
-  padding: 0 12px;
-  line-height: 28px;
-  margin-right: 15px;
-  cursor: pointer;
+/* Diseño del boton */
+#iniciarSesion {
+background-color: rgba(22, 122, 228, 0.846); /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
 }
 
-#main {
-  text-align: center;
-  padding-top: 90px;
-  font-family: arial, sans-serif;
+/* Estilo de la caja principal */
+#principal {
+text-align: center;
+padding-top: 90px;
+
 }
 
-#search-box-outer {
-  display: flex;
-  background-color: transparent;
-  font: 16px;
-  line-height: 34px;
-  height: 34px;
-  padding: 5px 8px 0 16px;
-  margin: 20px auto;
-  width: 584px;
-  border: none;
-  border-radius: 2px;
-  box-shadow: 0 3px 8px 1px rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.18);
+/* Estilo caja  de busqueda */
+#search-caja-afuera {
+display: flex;
+background-color: transparent;
+font: 16px;
+line-height: 34px;
+height: 34px;
+padding: 5px 8px 0 16px;
+margin: 20px auto;
+width: 584px;
+border: none;
+border-radius: 2px;
+box-shadow: 0 3px 8px 1px rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.18);
 }
 
-.search-box-inner {
-  border: none;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex: 100%;
-  height: 33px;
-  font-size: 18px;
+/* Estilo input caja  interna de busqueda que permita escribir */
+.search-caja-interna {
+border: none;
+background-color: transparent;
+margin: 0;
+padding: 0;
+display: flex;
+flex: 100%;
+height: 33px;
+outline-width: 0; /* Ocultar el borde de la caja input de tipo texto */
+font-size: 18px;
+}
+
+/* Estilo del microfono y camara de busqueda */
+.lup {
+width: 24px;
+height: 24px;
+background-size: 24px;
+vertical-align: middle;
+padding: 0px 0px 5px 0px;
+cursor: pointer;
 }
 
 .mic {
-  width: 24px;
-  height: 24px;
-  background-size: 24px;
-  vertical-align: middle;
-  padding: 0px 0px 5px 0px;
-  cursor: pointer;
+width: 24px;
+height: 24px;
+background-size: 24px;
+vertical-align: middle;
+padding: 0px 0px 5px 0px;
+cursor: pointer;
 }
 
-input:focus {
-  outline-width: 0;
+.cam {
+width: 24px;
+height: 24px;
+background-size: 24px;
+vertical-align: middle;
+padding: 0px 0px 5px 0px;
+cursor: pointer;
 }
 
-#main-buttons-div {
+/* estilo caja botones de busqueda */
+#botones-div-principal {
+display: block;
+padding-top: 6px;
+
+}
+#botones-div-principal a {
+text-decoration: none;
+} 
+/* estilo de los botones */
+.botones-busqueda {
+align-items: flex-start;
+background-color: #f2f2f2;
+color: #757575;
+font-size: 13px;
+font-weight: bold;
+height: 36px; /* ancho caja */
+width: 136px;/*  Largo caja */
+margin: 0px 4px;
+padding: 0px 16px;
+display: inline-block;
+border: solid;
+border-radius: 2px;
+border-width: 1px;
+border-color: #f2f2f2;
+}
+/* Cambiar estilo botones cuando se selecciona con mouse */
+.botones-busqueda:hover {
+border-style: solid;
+border-radius: 2px;
+border-width: 1px;
+border-color: rgb(198, 198, 198);
+color: rgb(34, 34, 34);
+background-color: rgb(248, 248, 248);
+cursor: pointer;
+}
+
+#latinoamerica{
+display: block;
+  text-align: center;
+padding-top: 10px;
+color: #514f4fee;
+}
+/* Acomodar la seccion del food */
+#pie-pagina {
+  position: absolute;
   display: block;
-  padding-top: 6px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
 }
 
-.search-button {
-  align-items: flex-start;
-  background-color: #f2f2f2;
-  color: #757575;
-  font-size: 13px;
-  font-weight: bold;
-  height: 36px;
-  margin: 0px 4px;
-  padding: 0px 16px;
-  display: inline-block;
-  border: solid;
-  border-radius: 2px;
-  border-width: 1px;
-  border-color: #f2f2f2;
+/* Eliminar los guiones de la seccion a del food */
+#pie-pagina a {
+text-decoration: none;
+padding-left: 30px;
+color: #757575;
+
+} 
+
+#colombia {
+
+padding: 0px 20px;
+}
+#Busqueda-pie-derecha {
+display: inline;
+float: right; 
+padding: 8px 20px;
 }
 
-.search-button:hover {
-  border-style: solid;
-  border-radius: 2px;
-  border-width: 1px;
-  border-color: rgb(198, 198, 198);
-  color: rgb(34, 34, 34);
-  background-color: rgb(248, 248, 248);
-  cursor: pointer;
+#Busqueda-pie-izquierda {
+display: inline;
+float: left; 
+padding: 8px 20px;
 }
 
-#lucky {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: #5f6368;
-    background-color: #f2f2f2;
-    font-size: 13px;
-    font-family: arial, sans-serif;
-    line-height: 40px;
-    border-top: 1px solid #e4e4e4;
-        margin-right: 50px;
-        text-indent: 5em
-  }
-
-
-
-.footer-left {
-  padding-left: 27px;
-  float: left;
-}
-
-.footer-right {
-  padding-right: 27px;
-  float: right;
-}
-
-.header-footer-link:hover {
-  text-decoration: underline;
-  cursor: pointer;
+hr {
+border-color:#7575752c;
 }
